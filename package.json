@@ -1,5 +1,5 @@
 {
-  "homepage":"http://anupamti.github.io/stay-flexi-assign"
+  "homepage": "http://anupamti.github.io/stay-flexi/",
   "name": "stay-flexi-assign",
   "version": "0.1.0",
   "private": true,
@@ -25,8 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
