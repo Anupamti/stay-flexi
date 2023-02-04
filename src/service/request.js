@@ -15,8 +15,10 @@ requestInstance.interceptors.request.use(
         config.baseURL = process.env.REACT_APP_API
 
         // get Data from cookies and pass it in Authorization
-        /* const token = getTokenFromCookies()
-           config.headers = { Authorization: `Bearer ${token}` }; */
+        /** 
+         * const token = getTokenFromCookies()
+         * config.headers = { Authorization: `Bearer ${token}` }; 
+         * */
 
         return config;
     },

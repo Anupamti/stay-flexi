@@ -1,1 +1,3 @@
 export const SEARCH_MOVIES = "SEARCH_MOVIES";
+export const MOVIE_DETAILS = "MOVIE_DETAILS";
+export const START_LOADER = "START_LOADER";

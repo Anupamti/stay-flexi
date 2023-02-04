@@ -14,22 +14,31 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router';
 
 const drawerWidth = 240;
 const navItems = ['Dashboard'];
+/**
+ * Mobile Resonsive Drawer and Navbar
+*/
 
 function DrawerAppBar(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const navigate = useNavigate()
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
 
+    const handleRoute = () => {
+        navigate('/')
+    }
+
     // Drawet component for mobile view 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
+            <Typography variant="h6" onClick={handleRoute} sx={{ my: 2 }}>
                 Stay-flexi
             </Typography>
             <Divider />
@@ -37,7 +46,7 @@ function DrawerAppBar(props) {
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
+                            <ListItemText onClick={handleRoute} primary={item} />
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -63,8 +72,9 @@ function DrawerAppBar(props) {
                     </IconButton>
                     <Typography
                         variant="h6"
+                        onClick={handleRoute}
                         component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, cursor: 'pointer' }}
                     >
                         Stay-flexi
                     </Typography>

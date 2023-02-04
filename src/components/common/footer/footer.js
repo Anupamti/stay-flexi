@@ -2,10 +2,10 @@ import { Divider, Grid, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 
-/*
-Footer Componet renders footer data and links
-mobile responsive
-*/
+/**
+ * Footer Componet renders footer data and links
+ * mobile responsive
+ */
 function Footer() {
     return (
         <>

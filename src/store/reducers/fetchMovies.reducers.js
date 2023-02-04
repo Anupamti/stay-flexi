@@ -19,6 +19,19 @@ export default function (state = store, action) {
                 componentProgress: false,
             };
 
+        case Actions.MOVIE_DETAILS:
+            return {
+                ...state,
+                movieDetails: action.payload,
+                componetLoader: false,
+                componentProgress: false,
+            };
+        case Actions.START_LOADER:
+            return {
+                ...state,
+                componetLoader: true,
+                componentProgress: false,
+            };
         default:
             return state;
     }

@@ -6,9 +6,9 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { useNavigate } from 'react-router';
 
-/*
-Card Componets renders single Movies Data 
-*/
+/**
+ * Card Componets renders single Movies Data 
+ * */
 export default function CardComponent({ result }) {
     const navigate = useNavigate()
     // handle movie route if id is present 

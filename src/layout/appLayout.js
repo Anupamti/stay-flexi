@@ -3,7 +3,9 @@ import React from 'react'
 import Footer from 'src/components/common/footer/footer'
 import Header from 'src/components/common/header/header'
 
-// This is an HOC which is reponsible for providing layout to the project
+/** 
+ *  This is an HOC which is reponsible for providing layout to the project
+ * */
 function AppLayout({ children }) {
     return (
         <div>
