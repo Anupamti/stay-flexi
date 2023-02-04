@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stay-flexi-assign/static/css/main.3043e749.css",
+    "main.js": "/stay-flexi-assign/static/js/main.d2a59f38.js",
+    "static/js/787.53127db0.chunk.js": "/stay-flexi-assign/static/js/787.53127db0.chunk.js",
+    "index.html": "/stay-flexi-assign/index.html",
+    "main.3043e749.css.map": "/stay-flexi-assign/static/css/main.3043e749.css.map",
+    "main.d2a59f38.js.map": "/stay-flexi-assign/static/js/main.d2a59f38.js.map",
+    "787.53127db0.chunk.js.map": "/stay-flexi-assign/static/js/787.53127db0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3043e749.css",
+    "static/js/main.d2a59f38.js"
+  ]
+}
