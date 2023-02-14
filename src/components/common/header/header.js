@@ -39,7 +39,7 @@ function DrawerAppBar(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" onClick={handleRoute} sx={{ my: 2 }}>
-                Stay-flexi
+                Decentral
             </Typography>
             <Divider />
             <List>
@@ -76,7 +76,7 @@ function DrawerAppBar(props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, cursor: 'pointer' }}
                     >
-                        Stay-flexi
+                        Decentral
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
